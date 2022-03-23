@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/BlueRiver"
+    tools:context=".SelectScreen">
+
+    <ImageView
+        android:id="@+id/selectText"
+        android:layout_width="191dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/select_screen" />
+
+    <ImageView
+        android:id="@+id/carlosCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/selectText"
+        app:layout_constraintStart_toStartOf="@+id/selectText"
+        app:layout_constraintTop_toBottomOf="@+id/selectText"
+        app:srcCompat="@drawable/carlos" />
+
+    <ImageView
+        android:id="@+id/seanCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/merzelleCard"
+        app:layout_constraintTop_toBottomOf="@+id/marienelCard"
+        app:srcCompat="@drawable/sean" />
+
+    <ImageView
+        android:id="@+id/angelicaCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toStartOf="@+id/minchaeCard"
+        app:layout_constraintTop_toTopOf="@+id/carlosCard"
+        app:srcCompat="@drawable/angelica" />
+
+    <ImageView
+        android:id="@+id/shawnCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toStartOf="@+id/philipCard"
+        app:layout_constraintTop_toBottomOf="@+id/josephCard"
+        app:srcCompat="@drawable/shawn" />
+
+    <ImageView
+        android:id="@+id/nyxCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/julliannaCard"
+        app:layout_constraintTop_toBottomOf="@+id/shawnCard"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/nyx" />
+
+    <ImageView
+        android:id="@+id/caloyCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toStartOf="@+id/renziCard"
+        app:layout_constraintTop_toBottomOf="@+id/angelicaCard"
+        app:srcCompat="@drawable/caloy" />
+
+    <ImageView
+        android:id="@+id/nyoomCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toStartOf="@+id/marienelCard"
+        app:layout_constraintTop_toBottomOf="@+id/caloyCard"
+        app:srcCompat="@drawable/chari" />
+
+    <ImageView
+        android:id="@+id/josephCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toStartOf="@+id/seanCard"
+        app:layout_constraintTop_toBottomOf="@+id/nyoomCard"
+        app:srcCompat="@drawable/joseph" />
+
+    <ImageView
+        android:id="@+id/staceyCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/miguelCard"
+        app:layout_constraintTop_toBottomOf="@+id/maxCard"
+        app:srcCompat="@drawable/stacey" />
+
+    <ImageView
+        android:id="@+id/samCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/louisCard"
+        app:layout_constraintTop_toBottomOf="@+id/jewelCard"
+        app:srcCompat="@drawable/sam" />
+
+    <ImageView
+        android:id="@+id/marienelCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/louisCard"
+        app:layout_constraintTop_toBottomOf="@+id/renziCard"
+        app:srcCompat="@drawable/marienel" />
+
+    <ImageView
+        android:id="@+id/alexCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/miguelCard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raphCard"
+        app:srcCompat="@drawable/alex" />
+
+    <ImageView
+        android:id="@+id/jewelCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/eliseCard"
+        app:layout_constraintTop_toBottomOf="@+id/erikaCard"
+        app:srcCompat="@drawable/jewel" />
+
+    <ImageView
+        android:id="@+id/miguelCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/merzelleCard"
+        app:layout_constraintStart_toStartOf="@+id/merzelleCard"
+        app:layout_constraintTop_toBottomOf="@+id/merzelleCard"
+        app:srcCompat="@drawable/miguel" />
+
+    <ImageView
+        android:id="@+id/mykCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/carlosCard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/carlosCard"
+        app:srcCompat="@drawable/myk" />
+
+    <ImageView
+        android:id="@+id/louisCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/eliseCard"
+        app:layout_constraintStart_toStartOf="@+id/eliseCard"
+        app:layout_constraintTop_toBottomOf="@+id/eliseCard"
+        app:srcCompat="@drawable/louis" />
+
+    <ImageView
+        android:id="@+id/beaCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/louisCard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lyzCard"
+        app:srcCompat="@drawable/bea" />
+
+    <ImageView
+        android:id="@+id/eliseCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/carlosCard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/carlosCard"
+        app:layout_constraintTop_toBottomOf="@+id/carlosCard"
+        app:srcCompat="@drawable/elise" />
+
+    <ImageView
+        android:id="@+id/renziCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/eliseCard"
+        app:layout_constraintTop_toBottomOf="@+id/minchaeCard"
+        app:srcCompat="@drawable/renzi" />
+
+    <ImageView
+        android:id="@+id/evCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/miguelCard"
+        app:layout_constraintStart_toStartOf="@+id/miguelCard"
+        app:layout_constraintTop_toBottomOf="@+id/miguelCard"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/ev" />
+
+    <ImageView
+        android:id="@+id/vinceCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/evCard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alexCard"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/vince" />
+
+    <ImageView
+        android:id="@+id/philipCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/miguelCard"
+        app:layout_constraintTop_toBottomOf="@+id/seanCard"
+        app:srcCompat="@drawable/philip" />
+
+    <ImageView
+        android:id="@+id/nathanCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/evCard"
+        app:layout_constraintTop_toBottomOf="@+id/staceyCard"
+        app:layout_constraintVertical_bias="0.07"
+        app:srcCompat="@drawable/nathaniel" />
+
+    <ImageView
+        android:id="@+id/merzelleCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/louisCard"
+        app:layout_constraintStart_toStartOf="@+id/louisCard"
+        app:layout_constraintTop_toBottomOf="@+id/louisCard"
+        app:srcCompat="@drawable/merz" />
+
+    <ImageView
+        android:id="@+id/minchaeCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@+id/carlosCard"
+        app:layout_constraintTop_toTopOf="@+id/carlosCard"
+        app:srcCompat="@drawable/minchae" />
+
+    <ImageView
+        android:id="@+id/lyzCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/eliseCard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mykCard"
+        app:srcCompat="@drawable/lyz" />
+
+    <ImageView
+        android:id="@+id/maxCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/merzelleCard"
+        app:layout_constraintTop_toBottomOf="@+id/samCard"
+        app:srcCompat="@drawable/max" />
+
+    <ImageView
+        android:id="@+id/julliannaCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="74dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/evCard"
+        app:layout_constraintTop_toBottomOf="@+id/philipCard"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/jullianna" />
+
+    <ImageView
+        android:id="@+id/raphCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/merzelleCard"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beaCard"
+        app:srcCompat="@drawable/raph" />
+
+    <ImageView
+        android:id="@+id/erikaCard"
+        android:layout_width="70dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/carlosCard"
+        app:layout_constraintTop_toTopOf="@+id/carlosCard"
+        app:srcCompat="@drawable/erika" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
