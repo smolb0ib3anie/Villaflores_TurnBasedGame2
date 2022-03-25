@@ -11,6 +11,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class SelectScreen extends AppCompatActivity {
+    int selected = 5;
+
+    ImageView mykCard,angelicaCard,carlosCard,minchaeCard,erikaCard,lyzCard,caloyCard,eliseCard,renziCard,jewelCard,beaCard,nyoomCard,louisCard,
+            marienelCard,samCard,raphCard,josephCard,merzelleCard,seanCard,maxCard,alexCard,shawnCard,miguelCard,philipCard,staceyCard,vinceCard,
+            nyxCard,evCard,julliannaCard,nathanCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +23,6 @@ public class SelectScreen extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_select_screen);
-
-        ImageView mykCard,angelicaCard,carlosCard,minchaeCard,erikaCard,lyzCard,caloyCard,eliseCard,renziCard,jewelCard,beaCard,nyoomCard,louisCard,
-                  marienelCard,samCard,raphCard,josephCard,merzelleCard,seanCard,maxCard,alexCard,shawnCard,miguelCard,philipCard,staceyCard,vinceCard,
-                  nyxCard,evCard,julliannaCard,nathanCard;
 
         mykCard = findViewById(R.id.mykCard);
         angelicaCard = findViewById(R.id.angelicaCard);
@@ -57,18 +58,221 @@ public class SelectScreen extends AppCompatActivity {
 
         mykCard.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {}
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        angelicaCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        carlosCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        minchaeCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        erikaCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        lyzCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        caloyCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        eliseCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        renziCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        jewelCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        beaCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        nyoomCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        louisCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        marienelCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        samCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        raphCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        josephCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        merzelleCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        seanCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        maxCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        alexCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        shawnCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        miguelCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        philipCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        staceyCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        vinceCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        nyxCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        evCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        julliannaCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
+        });
+
+        nathanCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startgame();
+            }
         });
     }
 
 public void startgame() {
-    int selected = 5;
-        if (selected > 0) {
-            selected--;
-        } else if (selected == 5) {
-            Intent intent = new Intent(this, GameScreen.class);
-            startActivity(intent);
-            }
+    if (selected > 0) {
+        selected--;
+    } else if (selected == 0) {
+        Intent intent = new Intent(this, GameScreen.class);
+        startActivity(intent);
         }
     }
 }
