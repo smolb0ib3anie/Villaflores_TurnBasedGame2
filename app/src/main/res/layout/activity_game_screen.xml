@@ -8,40 +8,455 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/fc_hp"
+        android:id="@+id/HeroHp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="24dp"
-        android:text="HP:100"
+        android:layout_marginTop="47dp"
+        android:text="HP:1200"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#A8C9D1"
+        app:layout_constraintEnd_toStartOf="@+id/HeroHp2"
+        app:layout_constraintHorizontal_bias="0.330"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp2" />
+    <TextView
+        android:id="@+id/HeroHp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        android:text="HP:1200"
+        android:textAlignment="center"
+        android:textColor="#A8C9D1"
+        app:layout_constraintEnd_toStartOf="@+id/HeroHp3"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp3" />
+    <TextView
+        android:id="@+id/HeroHp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="184dp"
+        android:text="HP:1200"
+        android:textAlignment="center"
+        android:textColor="#A8C9D1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
-        android:id="@+id/sc_hp"
+        android:id="@+id/HeroHp4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="133dp"
-        android:layout_marginBottom="24dp"
-        android:text="HP:100"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="60dp"
+        android:text="HP:1200"
         android:textAlignment="center"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+        android:textColor="#A8C9D1"
+        app:layout_constraintStart_toEndOf="@+id/HeroHp3"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp3" />
     <TextView
-        android:id="@+id/fc_mp"
+        android:id="@+id/HeroHp5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginBottom="4dp"
-        android:text="MP:10"
+        android:layout_marginTop="44dp"
+        android:text="HP:1200"
         android:textAlignment="center"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:textColor="#A8C9D1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.651"
+        app:layout_constraintStart_toEndOf="@+id/HeroHp4"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp4" />
+
+
+    <ProgressBar
+        android:id="@+id/Hero1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="53dp"
+        android:layout_height="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/HeroHp1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HeroHp1"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp1" />
+
+    <ProgressBar
+        android:id="@+id/Hero2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="53dp"
+        android:layout_height="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/HeroHp2"
+        app:layout_constraintStart_toStartOf="@+id/HeroHp2"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp2" />
+
+    <ProgressBar
+        android:id="@+id/Hero3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="53dp"
+        android:layout_height="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/HeroHp3"
+        app:layout_constraintStart_toStartOf="@+id/HeroHp3"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp3" />
+
+    <ProgressBar
+        android:id="@+id/Hero4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="53dp"
+        android:layout_height="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/HeroHp4"
+        app:layout_constraintStart_toStartOf="@+id/HeroHp4"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp4" />
+    <ProgressBar
+        android:id="@+id/Hero5"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="53dp"
+        android:layout_height="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/HeroHp5"
+        app:layout_constraintStart_toStartOf="@+id/HeroHp5"
+        app:layout_constraintTop_toBottomOf="@+id/HeroHp5" />
+
+
+    <ImageView
+        android:id="@+id/mykCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/angelicaCard"
+        app:srcCompat="@drawable/myk" />
+    <ImageView
+        android:id="@+id/lyzCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/caloyCard"
+        app:srcCompat="@drawable/lyz" />
+    <ImageView
+        android:id="@+id/beaCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nyoomCard"
+        app:srcCompat="@drawable/bea" />
+    <ImageView
+        android:id="@+id/raphCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/josephCard"
+        app:srcCompat="@drawable/raph" />
+    <ImageView
+        android:id="@+id/alexCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/shawnCard"
+        app:srcCompat="@drawable/alex" />
+    <ImageView
+        android:id="@+id/vinceCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nyxCard"
+        app:srcCompat="@drawable/vince" />
+
+    <ImageView
+        android:id="@+id/angelicaCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/mykCard"
+        app:layout_constraintTop_toTopOf="@+id/carlosCard"
+        app:srcCompat="@drawable/angelica" />
+    <ImageView
+        android:id="@+id/caloyCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/lyzCard"
+        app:layout_constraintTop_toTopOf="@+id/eliseCard"
+        app:srcCompat="@drawable/caloy" />
+    <ImageView
+        android:id="@+id/nyoomCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/beaCard"
+        app:layout_constraintTop_toTopOf="@+id/louisCard"
+        app:srcCompat="@drawable/chari" />
+    <ImageView
+        android:id="@+id/josephCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/raphCard"
+        app:layout_constraintTop_toTopOf="@+id/merzelleCard"
+        app:srcCompat="@drawable/joseph" />
+    <ImageView
+        android:id="@+id/shawnCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/alexCard"
+        app:layout_constraintTop_toTopOf="@+id/miguelCard"
+        app:srcCompat="@drawable/shawn" />
+    <ImageView
+        android:id="@+id/nyxCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/vinceCard"
+        app:layout_constraintTop_toTopOf="@+id/evCard"
+        app:srcCompat="@drawable/nyx" />
+
+    <ImageView
+        android:id="@+id/carlosCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="428dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/minchaeCard"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toEndOf="@+id/angelicaCard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carlos" />
+    <ImageView
+        android:id="@+id/eliseCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="428dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/minchaeCard"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toEndOf="@+id/angelicaCard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elise" />
+    <ImageView
+        android:id="@+id/louisCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="428dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/marienelCard"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toEndOf="@+id/nyoomCard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/louis" />
+    <ImageView
+        android:id="@+id/merzelleCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="428dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/seanCard"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toEndOf="@+id/josephCard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/merz" />
+    <ImageView
+        android:id="@+id/miguelCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="428dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/philipCard"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toEndOf="@+id/shawnCard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/miguel" />
+    <ImageView
+        android:id="@+id/evCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="428dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/julliannaCard"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toEndOf="@+id/nyxCard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ev" />
+
+    <ImageView
+        android:id="@+id/minchaeCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/erikaCard"
+        app:layout_constraintTop_toTopOf="@+id/carlosCard"
+        app:srcCompat="@drawable/minchae" />
+    <ImageView
+        android:id="@+id/renziCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/jewelCard"
+        app:layout_constraintTop_toTopOf="@+id/eliseCard"
+        app:srcCompat="@drawable/renzi" />
+    <ImageView
+        android:id="@+id/marienelCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/jewelCard"
+        app:layout_constraintTop_toTopOf="@+id/eliseCard"
+        app:srcCompat="@drawable/marienel" />
+    <ImageView
+        android:id="@+id/seanCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/maxCard"
+        app:layout_constraintTop_toTopOf="@+id/merzelleCard"
+        app:srcCompat="@drawable/sean" />
+    <ImageView
+        android:id="@+id/philipCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/staceyCard"
+        app:layout_constraintTop_toTopOf="@+id/miguelCard"
+        app:srcCompat="@drawable/philip" />
+    <ImageView
+        android:id="@+id/julliannaCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/nathanCard"
+        app:layout_constraintTop_toTopOf="@+id/evCard"
+        app:srcCompat="@drawable/jullianna" />
+
+    <ImageView
+        android:id="@+id/erikaCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/minchaeCard"
+        app:srcCompat="@drawable/erika" />
+    <ImageView
+        android:id="@+id/jewelCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/renziCard"
+        app:srcCompat="@drawable/jewel" />
+    <ImageView
+        android:id="@+id/samCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/marienelCard"
+        app:srcCompat="@drawable/sam" />
+    <ImageView
+        android:id="@+id/maxCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seanCard"
+        app:srcCompat="@drawable/max" />
+    <ImageView
+        android:id="@+id/staceyCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/philipCard"
+        app:srcCompat="@drawable/stacey" />
+    <ImageView
+        android:id="@+id/nathanCard"
+        android:layout_width="73dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/julliannaCard"
+        app:srcCompat="@drawable/nathaniel" />
+
+    <ImageView
+        android:id="@+id/monster"
+        android:layout_width="281dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/monster1" />
+
+    <ProgressBar
+        android:id="@+id/monsterHp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="308dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/monster"
+        app:layout_constraintEnd_toEndOf="@+id/monster"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/monster"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/MonsterHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HP: 5000"
+        android:textColor="#A8C9D1"
+        app:layout_constraintBottom_toTopOf="@+id/monsterHp"
+        app:layout_constraintEnd_toEndOf="@+id/monsterHp"
+        app:layout_constraintStart_toStartOf="@+id/monsterHp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
